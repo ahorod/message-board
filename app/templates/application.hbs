@@ -1,5 +1,29 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="nav blog-nav">
+      {{#link-to 'index' class="nav-link"}}Home{{/link-to}}
+      {{#link-to 'about' class="nav-link"}}About{{/link-to}}
+    </nav>
+  </div>
+</div>
+<div class="blog-header">
+  <div class="container">
+    {{#link-to 'index' class="home-link"}}<h1 class="blog-title">Chérie</h1>{{/link-to}}
+    <p class="lead blog-description">à la belle étoile</p>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 blog-main">
 
-{{outlet}}
+            {{outlet}}
+
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+<footer class="blog-footer">
+  <p>Contact <a href="https://getbootstrap.com">Chérie</a> at <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
