@@ -1,0 +1,17 @@
+{ "questions": [{
+    "title": "How",
+    "date": "1 May, 2017",
+    "author": "Mike",
+    "content": "How to ..."
+  }, {
+    "title": "Why",
+    "date": "12 May, 2017",
+    "author": "Mur",
+    "content": "Why to ..."
+  }, {
+    "title": "When",
+    "date": "18 May, 2017",
+    "author": "Nick",
+    "content": "When to ..."
+  }]
+}

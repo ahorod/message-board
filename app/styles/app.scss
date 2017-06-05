@@ -7,7 +7,7 @@
 
 @media (min-width: 48em) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -79,7 +79,9 @@ h6, .h6 {
   border-left: .3rem solid transparent;
 }
 
-
+.home-link:active, .home-link:focus, .home-link:hover, .home-link:visited,  {
+  text-decoration: none;
+}
 /*
  * Blog name and description
  */
@@ -175,4 +177,38 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.my-btn {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+#delete {
+  background-image: url(/assets/images/delete.png);
+}
+
+#update  {
+  background-image: url(/assets/images/update.png);
+}
+#ask {
+  background-color: orange;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+#answer {
+  background-color: green;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
 }

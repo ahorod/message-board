@@ -1,15 +1,13 @@
 <div class="container">
   <div class="row">
       <div class="col-sm-8 blog-main">
-        <!-- {{#each model as |post|}}
+        {{#each model as |question|}}
           <div class="blog-post">
-            <div class="post-title">{{post.title}}</div>
-            <p class="blog-post-meta">{{post.date}}</p>
-            <img src="{{post.image}}" style="width: 80%" alt="{{post.title}}"/>
-            <br>
-            {{#link-to 'post' post.id}}Read More{{/link-to}}
+            <h3 class="post-title">{{question.title}}</h3>
+            <p class="blog-post-meta">{{question.author}} {{question.date}}</p>
+            {{#link-to 'question' question.id}}Read More{{/link-to}}
           </div>
-        {{/each}} -->
+        {{/each}}
       </div>
       <!-- Side Bar -->
       <div class="col-sm-3 offset-sm-1 blog-sidebar">
@@ -17,23 +15,9 @@
           <h4>About</h4>
           <p>Ce qui embellit le désert, c'est qu'il cache un puits quelque part...</p>
         </div>
-        <div class="sidebar-module">
-          <h4>Archives</h4>
-          <ol class="list-unstyled">
-            <li><a href="#">March 2014</a></li>
-            <li><a href="#">February 2014</a></li>
-            <li><a href="#">January 2014</a></li>
-            <li><a href="#">December 2013</a></li>
-            <li><a href="#">November 2013</a></li>
-            <li><a href="#">October 2013</a></li>
-            <li><a href="#">September 2013</a></li>
-            <li><a href="#">August 2013</a></li>
-            <li><a href="#">July 2013</a></li>
-            <li><a href="#">June 2013</a></li>
-            <li><a href="#">May 2013</a></li>
-            <li><a href="#">April 2013</a></li>
-          </ol>
-        </div>
+        <br>
+        {{new-question saveQuestion="saveQuestion"}}
+
         <div class="sidebar-module">
           <h4>Elsewhere</h4>
           <ol class="list-unstyled">
@@ -42,7 +26,7 @@
             <li><a href="#">Facebook</a></li>
           </ol>
         </div>
-        <!-- {{new-post savePost="savePost"}} -->
+
       </div><!-- /.blog-sidebar -->
 
     </div><!-- /.row -->
