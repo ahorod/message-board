@@ -1,7 +1,37 @@
 # message-board
+#### Web app, 02.06.2017
+#### By Anna Horodetska
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Chérie is an application which allows to ask questions and post answers.
+
+## Planning
+1. Configuration/dependencies
+  * Ember
+  * Bootstrap
+
+2. Specs
+* Questions will include the content of the question itself, an author, date posted.
+* Answers will include the content of the answer and the author, date.
+* The website will include a header and/or navbar that appears on all pages.
+* All questions will be on the homepage, displaying only the question and the name of the author, date.
+* Users will be able to click a question,and will be routed to another page containing additional information and question details.
+* Users will be able to add and edit questions.
+* Users will be able to add answers to a question. Answers will be added and viewed on the same page as the question they respond to.
+* Users will be able to edit and delete answers.
+
+
+3. Integration
+  * Initial routes or index pages with all dependencies in Controller/index.html head
+  * Question/html page for displaying specific question.
+  * New-question component to add new question.
+  * Edit-question component to edit and delete question
+  * New-answer component to add new answer.
+  * Edit-answer component to edit and delte answer.
+  * About/html page for displaying info about application.
+
+4. UX/UI
+  * Include and modify Bootstrap v4.0.0-alpha.6
+  * Add custom style
 
 ## Prerequisites
 
